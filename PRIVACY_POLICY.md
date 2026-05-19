@@ -1,6 +1,6 @@
 # LiveNow — Privacy Policy
 
-**Last updated:** May 17, 2026
+**Last updated:** May 19, 2026
 
 This Privacy Policy describes how **LiveNow** (“the App”, “we”, “us”) handles information when you use our mobile application on iOS and Android.
 
@@ -9,9 +9,9 @@ This Privacy Policy describes how **LiveNow** (“the App”, “we”, “us”
 ## Who we are
 
 **App name:** LiveNow  
-**Package identifiers:** TBD (iOS and Android)
+**Package identifiers:** `com.livenow.app` (iOS and Android)
 
-For privacy-related questions, contact: TBD
+For privacy-related questions, contact: **daniielf.13@gmail.com**
 
 ---
 
@@ -30,6 +30,7 @@ The App is **not directed at children** and we do not knowingly collect personal
 - LiveNow **does not require an account** or your name, email, or phone number.
 - We store **minimal data on your device** (for example, whether you completed onboarding).
 - **Free users** may see **advertisements** served by Google AdMob, which may process device and advertising-related data as described below.
+- We use **Google Firebase Analytics** in production builds to understand how the App is used (for example, which features are used and whether ads load). We do **not** send analytics events from development builds.
 
 ---
 
@@ -45,7 +46,9 @@ When you use LiveNow, you may select preferences such as:
 - Indoor vs outdoor
 - Available time
 
-This information is used **only on your device** to filter and suggest activities. It is **not** stored in our servers.
+This information is used **on your device** to filter and suggest activities. We do **not** operate our own servers to store a user profile or preference history.
+
+When you request a suggestion, we may send **aggregated usage events** to Google Firebase Analytics that describe your preference choices (for example, solo vs group, indoor vs outdoor) as part of improving the App. These events are **not** linked to your name, email, or phone number in the App.
 
 ### 2. Information stored on your device
 
@@ -82,9 +85,25 @@ Where required by law (for example in the EEA or UK), you should be presented wi
 
 We do not control all data processing performed by Google as an independent controller.
 
-### 4. Analytics
+### 4. Analytics (Google Firebase Analytics)
 
-The current version of the App uses **limited, local diagnostic logging** during development-style analytics (for example, console events) and does not send a full analytics profile to our own servers. If we add third-party analytics (such as Firebase Analytics) in a future update, we will update this policy and app store disclosures accordingly.
+In **production** versions of the App (not during local development), we use **Google Firebase Analytics** (Google LLC) to understand how the App is used and to diagnose issues. Firebase may automatically collect certain technical and usage information (for example, app opens, device model, OS version, and general engagement signals) in addition to the custom events we send.
+
+We do **not** maintain our own analytics servers. Analytics data is processed by Google as described in:
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Firebase Privacy and Security](https://firebase.google.com/support/privacy)
+
+#### Custom events we send
+
+We log events such as the following. Parameters are limited to non-identifying categories and identifiers **internal to the App** (for example, an activity suggestion ID from our bundled catalog, not your real-world location or identity):
+
+We do **not** intentionally log your name, email, phone number, precise location, photos, contacts, or free-text messages through analytics.
+
+#### Your choices
+
+- Uninstalling the App stops new analytics collection from that installation.
+- For more information about Google’s retention and deletion practices, see Google’s and Firebase’s documentation linked above.
 
 ---
 
@@ -96,6 +115,7 @@ Where the GDPR or UK GDPR applies, we rely on the following bases depending on t
 | --------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Providing core App features (on-device suggestions) | Performance of a service you request / legitimate interests                                  |
 | Storing onboarding status on device                 | Legitimate interests / performance of the service                                            |
+| Analytics via Firebase (production builds)          | Legitimate interests (improve and secure the App) and/or **consent** where required by law   |
 | Showing ads via AdMob                               | **Consent** (where required) or legitimate interests for non-personalized ads, as applicable |
 | Compliance with law                                 | Legal obligation                                                                             |
 
@@ -109,11 +129,11 @@ We **do not sell** your personal information.
 
 We share information only in these situations:
 
-- **Service providers:** Google (AdMob) for advertising, subject to their terms and privacy policy.
+- **Service providers:** Google (AdMob for advertising; Firebase for analytics), subject to their terms and privacy policies.
 - **Legal requirements:** If required by law, regulation, or valid legal process.
 - **Business transfers:** If the App or its assets are transferred (users would be notified via an updated policy where required).
 
-We do not share your preference selections with third parties for their own marketing in the current version of the App.
+Preference-related **usage events** may be processed by Google Firebase Analytics as described in section 4. We do not sell your personal information or share preference data with third parties for their own marketing.
 
 ---
 
@@ -127,8 +147,9 @@ Google may process data on servers located outside your country, including the U
 
 - **On-device data:** Kept until you clear app data or uninstall the App.
 - **Ad-related data:** Retained according to Google AdMob’s policies and your device settings.
+- **Analytics data:** Retained by Google Firebase according to its configuration and policies (typically for a limited period defined in Google Analytics / Firebase settings, then aggregated or deleted per Google’s schedules).
 
-We do not maintain a central user profile on our servers in the current version of the App.
+We do not maintain a central user profile on our own servers.
 
 ---
 
@@ -152,9 +173,7 @@ We may update this Privacy Policy from time to time. We will post the new versio
 
 ## Contact
 
-**Email:** TBD
-**App:** LiveNow TBD
+**Email:** daniielf.13@gmail.com
+**App:** LiveNow (`com.livenow.app`)
 
 ---
-
-_End of Privacy Policy_
